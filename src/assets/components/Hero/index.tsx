@@ -1,4 +1,5 @@
 import hero from "@/assets/images/hero.png"
+import { Button } from "../Button"
 export const Hero = () => {
 return (
     <div className="container">
@@ -9,8 +10,12 @@ return (
             <h2 className="text-xl font-medium leading-normal tracking-wide mb-2.5 ">Kripton One</h2>
             <h1 className="text-2xl leading-9 tracking-widest mb-10 ">Tranforme Qualquer Passo em Presença</h1>
             <div className="flex gap-3.5">
-                <button>Ver Modelos</button>
-                <button>Comprar</button>
+                <Button variant="secondary" size="sm">
+                    Ver Modelos
+                </Button>
+                <Button variant="primary" size="md">
+                    Comprar
+                </Button>
             </div>
         </div>
     </div>
