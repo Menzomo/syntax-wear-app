@@ -1,3 +1,6 @@
+import { Header } from "./assets/components/Header"
+import { Hero } from "./assets/components/Hero"
+
 
 
 
@@ -6,8 +9,10 @@ function App() {
 
   return (
     <>
-      
-      <h2 className="text-error">Welcome to React</h2>
+      <Header/>
+      <main className="py-10">
+      <Hero/>
+     </main>
     </>
   )
 }
