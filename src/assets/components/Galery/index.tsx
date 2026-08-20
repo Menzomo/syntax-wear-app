@@ -5,6 +5,7 @@ import galeriaTenisColorido from "@/assets/images/galeria-tenis-colorido.jpg"
 import galeriaTenisBrancoPreto from "@/assets/images/galeria-tenis-branco-e-preto.jpg"
 import galeriaTenisCinza from "@/assets/images/galeria-tenis-cinza.jpg"
 import { Button } from "../Button"
+import { Overlay } from "../Overlay"
 
 export const Galery = () => {
     return (
@@ -21,18 +22,17 @@ export const Galery = () => {
                     <img src={galeriaHomem} alt="Homem sentado com os tênis da loja" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 px-8 text-center text-[#EDEDED]">
-                        <div>
-                            <h3 className="text-xl font-medium leading-6 tracking-[0.08em] mb-2.5">Krypton One</h3>
-                            <p className="text-2xl font-medium leading-8 tracking-[0.08em]">Estilo urbano com atitude</p>
-                        </div>
-                        <div className="flex gap-3.5">
-                            <Button variant="secondary" size="lg">
-                                Feminino
-                            </Button>
-                            <Button variant="secondary" size="lg">
-                                Masculino
-                            </Button>
-                        </div>
+                        <Overlay title="kripton One" subtitle="Estilo Urbano com Atitude" className="inset-0 justify-center ">
+                            <div className="flex gap-3.5">
+                                <Button variant="secondary" size="lg">
+                                    Feminino
+                                </Button>
+                                <Button variant="secondary" size="lg">
+                                    Masculino
+                                </Button>
+
+                            </div>
+                        </Overlay>
                     </div>
                 </div>
 
