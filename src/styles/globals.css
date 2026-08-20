@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-background: hsl(0, 0%, 100%);
+    --color-background: hsl(0, 0%, 96%);
     --color-surface: hsl(0, 0%, 96%);
     --color-surface-alt: hsl(0, 0%, 93%);
     --color-border: hsl(0, 0%, 80%);
@@ -46,8 +46,23 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
+
+    @media (min-width: 768px) {
+        padding: 0 40px;
+    }
+}
+
+/* Esconde scrollbar no Chrome, Safari e Edge */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Esconde scrollbar no Firefox */
+.scrollbar-hide {
+    scrollbar-width: none;
 }
 
 body {
     font-family: var(--font-display);
+    background: var(--color-background);
 }

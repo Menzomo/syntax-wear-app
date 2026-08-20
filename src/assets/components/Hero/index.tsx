@@ -1,10 +1,12 @@
 import hero from "@/assets/images/hero.png"
+import galeriaHomem from "@/assets/images/card-imagem.jpg"
 import { Button } from "../Button"
 export const Hero = () => {
 return (
     <div className="container">
-<section className=" relative h-125 rounded-[20px] mb-10 ">
-    <img src={hero} alt="Homen sentado com os tenis da loja " className="w-full h-full object-cover rounded-[20px] " />
+<section className=" relative h-[657px] md:h-125 rounded-[20px] mb-10 ">
+    <img src={galeriaHomem} alt="Homen sentado com os tenis da loja " className="md:hidden w-full h-full object-cover rounded-[20px] " />
+    <img src={hero} alt="Homen sentado com os tenis da loja " className="hidden md:block w-full h-full object-cover rounded-[20px] " />
     <div className="absolute w-full bottom-0 flex justify-end items-center text-center px-6 md:px-24 pb-32 ">
         <div className="flex flex-col w-[388px] items-center text-white">
             <h2 className="text-xl font-medium leading-normal tracking-wide mb-2.5 ">Kripton One</h2>
