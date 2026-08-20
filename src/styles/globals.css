@@ -65,4 +65,5 @@
 body {
     font-family: var(--font-display);
     background: var(--color-background);
+    color:#ffffff;
 }
