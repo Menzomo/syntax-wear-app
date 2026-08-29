@@ -1,25 +1,24 @@
-import { Header } from "./assets/components/Header"
-import { Hero } from "./assets/components/Hero"
-import { Categories } from "./assets/components/Categories"
-import { Galery } from "./assets/components/Galery"
-import { Footer } from "./assets/components/Footer"
 
 
+import { RouterProvider, createRouter } from "@tanstack/react-router"
+
+import { routeTree } from "./router-tree-gen"
+
+
+const router = createRouter({ routeTree });
+
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router
+  }
+}
 
 
 function App() {
 
 
   return (
-    <>
-      <Header />
-      <main className="py-10">
-        <Hero />
-        <Categories />
-        <Galery />
-      </main>
-      <Footer />
-    </>
+    <RouterProvider router={router}/>
   )
 }
 

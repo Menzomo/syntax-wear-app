@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="relative">
             <header className="fixed top-10 left-0 right-0 z-10 mx-2.5 md:mx-10">
 
-                <div className=" bg-white items-center w-full max-w-[1320px] mx-auto flex justify-between py-2.5 px-5 md:py-3 md:px-7 rounded-2xl mt-5 shadow-lg ">
+                <div className=" bg-white items-center w-full max-w-[1320px] mx-auto flex justify-between py-2.5 px-5 md:py-3 md:px-7 rounded-2xl mt-5 shadow-lg  text-black">
                     <img src={Logo} alt="Logo" className="h-8 w-32 md:w-36" />
 
                     <nav className="hidden md:block">
